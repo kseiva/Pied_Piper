@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Roboto";
+  font-style: normal;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 84px;
+  background-image: url("images/Rectangle.png");
+}
+
+.header_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  width: 184px;
+  left: 50px;
+  top: 20px;
+}
+
+.header-menu {
+  position: absolute;
+  height: 29px;
+  right: 80px;
+  top: 28px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  text-decoration: none;
+  text-align: right;
+  color: #ffffff;
+}
+
+.title {
+  margin-top: 84px;
+  background-image: url("images/image.png");
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  padding: 160px 50px;
+}
+
+.title-text {
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 84px;
+  color: #ffffff;
+}
+
+.problem {
+  width: 100%;
+  background: #eeeeee;
+  padding: 48px 30px 92px 30px;
+}
+
+.problem_title {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color: #007765;
+}
+
+.problem p {
+  width: 1110px;
+  margin: auto;
+  text-align: left; /* Выравнивание текста по левому краю */
+  font-weight: 100;
+  font-size: 32px;
+  line-height: 37px;
+
+  color: #000000;
+  margin-top: 0.5em; /* Отступ сверху */
+  margin-bottom: 1em; /* Отступ снизу */
+}
+
+.hero {
+  width: 100%;
+  background-image: url(images/Hero.png);
+  background-size: cover;
+  padding: 127px 30px;
+}
+
+.hero_text {
+  margin: 0 auto;
+  width: 1110px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.intro {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  padding: 48px 30px;
+}
+
+.intro h1 {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  margin-top: 48px;
+  color: #007765;
+}
+
+.intro p {
+  width: 1110px;
+  margin: auto;
+  text-align: left; /* Выравнивание текста по левому краю */
+  margin-top: 0.5em; /* Отступ сверху */
+  margin-bottom: 1em; /* Отступ снизу */
+  font-size: 32px;
+  line-height: 37px;
+  color: #000000;
+}
+
+.intro_img_txt {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.intro_img {
+  float: left;
+  margin-right: 48px;
+}
+
+.team {
+  background: #eeeeee;
+  padding: 58px 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team_cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team_card {
+  flex-basis: 30%;
+  height: 283px;
+  margin-top: 60px;
+  margin-right: 10px;
+  margin: 10px;
+	padding: 20px 10px;
+}
+
+.team h1 {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color: #007765;
+
+}
+
+.team_name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #007765;
+}
+
+.team_position {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.copyright_block {
+  width: 100%;
+  left: 0px;
+  background: #333333;
+  padding: 50px 30px 62px;
+}
+
+.copyright_block p {
+  margin: 0 auto;
+  width: 540px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 450px) {
+  .title {
+    width: 100%;
+  }
+
+  .problem {
+    width: 100%;
+  }
+
+  .team, .team_cards {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1150px)
+    {
+        header, .header_block, .title, .problem, .hero, .intro, .team, .team_cards, .copyright_block {
+            width: 1110px;
+        }
+    }
