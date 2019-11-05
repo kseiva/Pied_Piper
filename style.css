@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -162,7 +163,7 @@ header {
   margin-top: 60px;
   margin-right: 10px;
   margin: 10px;
-	padding: 20px 10px;
+  padding: 20px 10px;
 }
 
 .team h1 {
@@ -171,7 +172,6 @@ header {
   line-height: 75px;
   text-align: center;
   color: #007765;
-
 }
 
 .team_name {
@@ -216,23 +216,16 @@ a:visited {
   color: #ffffff;
 }
 
-@media screen and (max-width: 450px) {
-  .title {
-    width: 100%;
-  }
-
-  .problem {
-    width: 100%;
-  }
-
-  .team, .team_cards {
-    width: 100%;
+@media screen and (max-width: 1200px) {
+  header,
+  .header_block,
+  .title,
+  .problem,
+  .hero,
+  .intro,
+  .team,
+  .team_cards,
+  .copyright_block {
+    width: 1110px;
   }
 }
-
-@media screen and (max-width: 1150px)
-    {
-        header, .header_block, .title, .problem, .hero, .intro, .team, .team_cards, .copyright_block {
-            width: 1110px;
-        }
-    }
